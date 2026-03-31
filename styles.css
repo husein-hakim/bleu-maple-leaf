@@ -64,7 +64,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     width: auto;
 }
 
@@ -227,6 +227,8 @@ body {
     border-radius: 10px;
     transition: var(--transition);
     background: var(--text-white);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .brand-item:hover {
@@ -721,6 +723,17 @@ section {
     line-height: 1.8;
 }
 
+.contact-text p a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-text p a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 .contact-form {
     background: var(--text-white);
     padding: 40px;
@@ -787,6 +800,16 @@ section {
     color: #a0a0a0;
     font-size: 14px;
     line-height: 1.8;
+}
+
+.footer-section p a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section p a:hover {
+    color: var(--text-white);
 }
 
 .footer-section ul {
@@ -908,10 +931,18 @@ section {
 
     .brands-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .brand-item {
-        padding: 30px 15px;
+        padding: 25px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .brand-logo-img-large {
+        max-width: 100px;
+        max-height: 70px;
     }
 
     .brands-page-grid {
@@ -945,5 +976,25 @@ section {
     .brand-logo-img {
         max-width: 80px;
         max-height: 50px;
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .brand-item {
+        padding: 20px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .brand-logo-img-large {
+        max-width: 120px;
+        max-height: 80px;
+    }
+
+    .brands-page-grid {
+        grid-template-columns: 1fr;
     }
 }
