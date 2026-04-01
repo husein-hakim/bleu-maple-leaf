@@ -123,7 +123,7 @@ body {
 }
 
 /* ============================================
-   HERO SECTION WITH VIDEO
+   HERO SECTION WITH IMAGE
    ============================================ */
 .hero {
     position: relative;
@@ -135,7 +135,7 @@ body {
     overflow: hidden;
 }
 
-.hero-video {
+.hero-image {
     position: absolute;
     top: 0;
     left: 0;
